@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		315C6E0E14D9CFD800F5510E /* GiltJsonParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 315C6E0D14D9CFD800F5510E /* GiltJsonParserDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 315C6E1514D9E58C00F5510E /* GiltDefaultJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		315C6E1814D9E58C00F5510E /* GiltDefaultJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C6E1614D9E58C00F5510E /* GiltDefaultJsonParser.m */; };
+		3170E1F714DB4D2C00659527 /* GiltUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3170E1F514DB4D2C00659527 /* GiltUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3170E1F814DB4D2C00659527 /* GiltUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3170E1F614DB4D2C00659527 /* GiltUrl.m */; };
+		3170E1FC14DC313200659527 /* GiltUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3170E1FB14DC313200659527 /* GiltUrlTests.m */; };
+		319708AB14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319708AA14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m */; };
+		319708B514D1DA0A0013FFDC /* sales.json in Resources */ = {isa = PBXBuildFile; fileRef = 319708B314D1DA0A0013FFDC /* sales.json */; };
+		319708D614D1E5C50013FFDC /* GiltProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319708CF14D1E5C50013FFDC /* GiltProductTests.m */; };
+		319708D714D1E5C50013FFDC /* GiltSaleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319708D114D1E5C50013FFDC /* GiltSaleTests.m */; };
+		319708D814D1E5C50013FFDC /* GiltSkuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319708D314D1E5C50013FFDC /* GiltSkuTests.m */; };
+		31E586D314E450BD00120E1E /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 31E586D214E450BD00120E1E /* product.json */; };
+		31E586D614E4512400120E1E /* product.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31E586D414E4512400120E1E /* product.plist */; };
+		31E586D714E4512400120E1E /* sales.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31E586D514E4512400120E1E /* sales.plist */; };
+		35171CC614D1BABF000F9ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CC514D1BABF000F9ED9 /* Foundation.framework */; };
+		35171CCC14D1BABF000F9ED9 /* GiltApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171CCB14D1BABF000F9ED9 /* GiltApi.m */; };
+		35171CD414D1BABF000F9ED9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CD314D1BABF000F9ED9 /* SenTestingKit.framework */; };
+		35171CD714D1BABF000F9ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CC514D1BABF000F9ED9 /* Foundation.framework */; };
+		35171CDA14D1BAC0000F9ED9 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CC214D1BABF000F9ED9 /* libGiltApi.a */; };
+		35171CE014D1BAC0000F9ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35171CDE14D1BAC0000F9ED9 /* InfoPlist.strings */; };
+		351A16D314D493ED007C0B00 /* GiltImageCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 351A16D114D493ED007C0B00 /* GiltImageCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		351A16D414D493ED007C0B00 /* GiltImageCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A16D214D493ED007C0B00 /* GiltImageCollection.m */; };
+		351A16D714D49A85007C0B00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D614D49A85007C0B00 /* CoreGraphics.framework */; };
+		351A16D914D49B7F007C0B00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D814D49B7F007C0B00 /* UIKit.framework */; };
+		35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D3C14D1C6D7002C29E4 /* GiltModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D4014D1C6EE002C29E4 /* GiltSale.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D3E14D1C6EE002C29E4 /* GiltSale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D4114D1C6EE002C29E4 /* GiltSale.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D3F14D1C6EE002C29E4 /* GiltSale.m */; };
+		35384D4514D1C714002C29E4 /* GiltProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D4314D1C714002C29E4 /* GiltProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D4614D1C714002C29E4 /* GiltProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D4414D1C714002C29E4 /* GiltProduct.m */; };
+		35384D4A14D1C747002C29E4 /* GiltSku.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D4814D1C746002C29E4 /* GiltSku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D4B14D1C747002C29E4 /* GiltSku.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D4914D1C746002C29E4 /* GiltSku.m */; };
+		35384D5914D1DF42002C29E4 /* GiltSalesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D5714D1DF42002C29E4 /* GiltSalesClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D5A14D1DF42002C29E4 /* GiltSalesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D5814D1DF42002C29E4 /* GiltSalesClient.m */; };
+		35384D5D14D1E08E002C29E4 /* GiltApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D5C14D1E08E002C29E4 /* GiltApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		359914E114E60978004BF43F /* GiltSalesClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 359914E014E60978004BF43F /* GiltSalesClientTests.m */; };
+		35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D26C0C14E5BDAA009E6188 /* GiltProductClient.h */; };
+		35D26C0F14E5BDAA009E6188 /* GiltProductClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D26C0D14E5BDAA009E6188 /* GiltProductClient.m */; };
+		35DA350014D4ADFA0090EE3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D814D49B7F007C0B00 /* UIKit.framework */; };
+		35DA350314D73B620090EE3D /* GiltImageCollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA350214D73B620090EE3D /* GiltImageCollectionTest.m */; };
+		35F58CE814D1F646003891AF /* GiltApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F58CE714D1F646003891AF /* GiltApiClient.m */; };
+		35FE754C14E5D250003D1458 /* GiltProductsClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FE754B14E5D250003D1458 /* GiltProductsClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35171CD814D1BAC0000F9ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35171CB914D1BABF000F9ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35171CC114D1BABF000F9ED9;
+			remoteInfo = ApiLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		315C6E0D14D9CFD800F5510E /* GiltJsonParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltJsonParserDelegate.h; path = Parser/GiltJsonParserDelegate.h; sourceTree = "<group>"; };
+		315C6E1514D9E58C00F5510E /* GiltDefaultJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltDefaultJsonParser.h; path = Parser/GiltDefaultJsonParser.h; sourceTree = "<group>"; };
+		315C6E1614D9E58C00F5510E /* GiltDefaultJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltDefaultJsonParser.m; path = Parser/GiltDefaultJsonParser.m; sourceTree = "<group>"; };
+		3170E1F514DB4D2C00659527 /* GiltUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltUrl.h; path = Helpers/GiltUrl.h; sourceTree = "<group>"; };
+		3170E1F614DB4D2C00659527 /* GiltUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltUrl.m; path = Helpers/GiltUrl.m; sourceTree = "<group>"; };
+		3170E1FA14DC313200659527 /* GiltUrlTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltUrlTests.h; sourceTree = "<group>"; };
+		3170E1FB14DC313200659527 /* GiltUrlTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltUrlTests.m; sourceTree = "<group>"; };
+		319708A914D1D0B50013FFDC /* GiltJsonParserDelegateTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltJsonParserDelegateTests.h; sourceTree = "<group>"; };
+		319708AA14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltJsonParserDelegateTests.m; sourceTree = "<group>"; };
+		319708B314D1DA0A0013FFDC /* sales.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = sales.json; path = Data/sales.json; sourceTree = "<group>"; };
+		319708CE14D1E5C50013FFDC /* GiltProductTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltProductTests.h; sourceTree = "<group>"; };
+		319708CF14D1E5C50013FFDC /* GiltProductTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltProductTests.m; sourceTree = "<group>"; };
+		319708D014D1E5C50013FFDC /* GiltSaleTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltSaleTests.h; sourceTree = "<group>"; };
+		319708D114D1E5C50013FFDC /* GiltSaleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltSaleTests.m; sourceTree = "<group>"; };
+		319708D214D1E5C50013FFDC /* GiltSkuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltSkuTests.h; sourceTree = "<group>"; };
+		319708D314D1E5C50013FFDC /* GiltSkuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltSkuTests.m; sourceTree = "<group>"; };
+		31E586D214E450BD00120E1E /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = product.json; path = Data/product.json; sourceTree = "<group>"; };
+		31E586D414E4512400120E1E /* product.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = product.plist; path = Data/product.plist; sourceTree = "<group>"; };
+		31E586D514E4512400120E1E /* sales.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sales.plist; path = Data/sales.plist; sourceTree = "<group>"; };
+		35171CC214D1BABF000F9ED9 /* libGiltApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGiltApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		35171CC514D1BABF000F9ED9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35171CC914D1BABF000F9ED9 /* GiltApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GiltApi-Prefix.pch"; sourceTree = "<group>"; };
+		35171CCA14D1BABF000F9ED9 /* GiltApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiltApi.h; sourceTree = "<group>"; };
+		35171CCB14D1BABF000F9ED9 /* GiltApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiltApi.m; sourceTree = "<group>"; };
+		35171CD214D1BABF000F9ED9 /* GiltApiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiltApiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35171CD314D1BABF000F9ED9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		35171CDD14D1BAC0000F9ED9 /* GiltApiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GiltApiTests-Info.plist"; sourceTree = "<group>"; };
+		35171CDF14D1BAC0000F9ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		351A16D114D493ED007C0B00 /* GiltImageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltImageCollection.h; path = ApiLib/Classes/Model/GiltImageCollection.h; sourceTree = SOURCE_ROOT; };
+		351A16D214D493ED007C0B00 /* GiltImageCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltImageCollection.m; path = ApiLib/Classes/Model/GiltImageCollection.m; sourceTree = SOURCE_ROOT; };
+		351A16D614D49A85007C0B00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		351A16D814D49B7F007C0B00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35384D3C14D1C6D7002C29E4 /* GiltModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltModel.h; path = ApiLib/Classes/Model/GiltModel.h; sourceTree = SOURCE_ROOT; };
+		35384D3E14D1C6EE002C29E4 /* GiltSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltSale.h; path = ApiLib/Classes/Model/GiltSale.h; sourceTree = SOURCE_ROOT; };
+		35384D3F14D1C6EE002C29E4 /* GiltSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltSale.m; path = ApiLib/Classes/Model/GiltSale.m; sourceTree = SOURCE_ROOT; };
+		35384D4314D1C714002C29E4 /* GiltProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltProduct.h; path = ApiLib/Classes/Model/GiltProduct.h; sourceTree = SOURCE_ROOT; };
+		35384D4414D1C714002C29E4 /* GiltProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltProduct.m; path = ApiLib/Classes/Model/GiltProduct.m; sourceTree = SOURCE_ROOT; };
+		35384D4814D1C746002C29E4 /* GiltSku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiltSku.h; path = ApiLib/Classes/Model/GiltSku.h; sourceTree = SOURCE_ROOT; };
+		35384D4914D1C746002C29E4 /* GiltSku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiltSku.m; path = ApiLib/Classes/Model/GiltSku.m; sourceTree = SOURCE_ROOT; };
+		35384D5714D1DF42002C29E4 /* GiltSalesClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltSalesClient.h; sourceTree = "<group>"; };
+		35384D5814D1DF42002C29E4 /* GiltSalesClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltSalesClient.m; sourceTree = "<group>"; };
+		35384D5C14D1E08E002C29E4 /* GiltApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltApiClient.h; sourceTree = "<group>"; };
+		359914DF14E60978004BF43F /* GiltSalesClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltSalesClientTests.h; sourceTree = "<group>"; };
+		359914E014E60978004BF43F /* GiltSalesClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltSalesClientTests.m; sourceTree = "<group>"; };
+		35D26C0C14E5BDAA009E6188 /* GiltProductClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltProductClient.h; sourceTree = "<group>"; };
+		35D26C0D14E5BDAA009E6188 /* GiltProductClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltProductClient.m; sourceTree = "<group>"; };
+		35DA350114D73B610090EE3D /* GiltImageCollectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltImageCollectionTest.h; sourceTree = "<group>"; };
+		35DA350214D73B620090EE3D /* GiltImageCollectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltImageCollectionTest.m; sourceTree = "<group>"; };
+		35F58CE714D1F646003891AF /* GiltApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltApiClient.m; sourceTree = "<group>"; };
+		35FE754A14E5D250003D1458 /* GiltProductsClientTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiltProductsClientTests.h; sourceTree = "<group>"; };
+		35FE754B14E5D250003D1458 /* GiltProductsClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiltProductsClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35171CBF14D1BABF000F9ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A16D714D49A85007C0B00 /* CoreGraphics.framework in Frameworks */,
+				35171CC614D1BABF000F9ED9 /* Foundation.framework in Frameworks */,
+				351A16D914D49B7F007C0B00 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35171CCE14D1BABF000F9ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171CD714D1BABF000F9ED9 /* Foundation.framework in Frameworks */,
+				35DA350014D4ADFA0090EE3D /* UIKit.framework in Frameworks */,
+				35171CD414D1BABF000F9ED9 /* SenTestingKit.framework in Frameworks */,
+				35171CDA14D1BAC0000F9ED9 /* libGiltApi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		315C6E0814D9CC5800F5510E /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				315C6E0D14D9CFD800F5510E /* GiltJsonParserDelegate.h */,
+				315C6E1514D9E58C00F5510E /* GiltDefaultJsonParser.h */,
+				315C6E1614D9E58C00F5510E /* GiltDefaultJsonParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		3170E1F314DB4BE100659527 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3170E1F514DB4D2C00659527 /* GiltUrl.h */,
+				3170E1F614DB4D2C00659527 /* GiltUrl.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		319708AC14D1D20F0013FFDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				31E586D414E4512400120E1E /* product.plist */,
+				31E586D514E4512400120E1E /* sales.plist */,
+				31E586D214E450BD00120E1E /* product.json */,
+				319708B314D1DA0A0013FFDC /* sales.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		35171CB714D1BABF000F9ED9 = {
+			isa = PBXGroup;
+			children = (
+				35171CC714D1BABF000F9ED9 /* ApiLib */,
+				35171CDB14D1BAC0000F9ED9 /* ApiLibTests */,
+				35171CC414D1BABF000F9ED9 /* Frameworks */,
+				35171CC314D1BABF000F9ED9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35171CC314D1BABF000F9ED9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35171CC214D1BABF000F9ED9 /* libGiltApi.a */,
+				35171CD214D1BABF000F9ED9 /* GiltApiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35171CC414D1BABF000F9ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351A16D814D49B7F007C0B00 /* UIKit.framework */,
+				35171CC514D1BABF000F9ED9 /* Foundation.framework */,
+				351A16D614D49A85007C0B00 /* CoreGraphics.framework */,
+				35171CD314D1BABF000F9ED9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35171CC714D1BABF000F9ED9 /* ApiLib */ = {
+			isa = PBXGroup;
+			children = (
+				359C1DF414D1C5AB00010224 /* Classes */,
+				35171CCA14D1BABF000F9ED9 /* GiltApi.h */,
+				35171CCB14D1BABF000F9ED9 /* GiltApi.m */,
+				35171CC814D1BABF000F9ED9 /* Supporting Files */,
+			);
+			path = ApiLib;
+			sourceTree = "<group>";
+		};
+		35171CC814D1BABF000F9ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35171CC914D1BABF000F9ED9 /* GiltApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35171CDB14D1BAC0000F9ED9 /* ApiLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				319708AC14D1D20F0013FFDC /* Data */,
+				35171CDC14D1BAC0000F9ED9 /* Supporting Files */,
+				35DA350114D73B610090EE3D /* GiltImageCollectionTest.h */,
+				35DA350214D73B620090EE3D /* GiltImageCollectionTest.m */,
+				319708A914D1D0B50013FFDC /* GiltJsonParserDelegateTests.h */,
+				319708AA14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m */,
+				319708CE14D1E5C50013FFDC /* GiltProductTests.h */,
+				319708CF14D1E5C50013FFDC /* GiltProductTests.m */,
+				319708D014D1E5C50013FFDC /* GiltSaleTests.h */,
+				319708D114D1E5C50013FFDC /* GiltSaleTests.m */,
+				319708D214D1E5C50013FFDC /* GiltSkuTests.h */,
+				319708D314D1E5C50013FFDC /* GiltSkuTests.m */,
+				3170E1FA14DC313200659527 /* GiltUrlTests.h */,
+				3170E1FB14DC313200659527 /* GiltUrlTests.m */,
+				35FE754A14E5D250003D1458 /* GiltProductsClientTests.h */,
+				35FE754B14E5D250003D1458 /* GiltProductsClientTests.m */,
+				359914DF14E60978004BF43F /* GiltSalesClientTests.h */,
+				359914E014E60978004BF43F /* GiltSalesClientTests.m */,
+			);
+			path = ApiLibTests;
+			sourceTree = "<group>";
+		};
+		35171CDC14D1BAC0000F9ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35171CDD14D1BAC0000F9ED9 /* GiltApiTests-Info.plist */,
+				35171CDE14D1BAC0000F9ED9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35384D5514D1DE67002C29E4 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				35384D5C14D1E08E002C29E4 /* GiltApiClient.h */,
+				35F58CE714D1F646003891AF /* GiltApiClient.m */,
+				35384D5714D1DF42002C29E4 /* GiltSalesClient.h */,
+				35384D5814D1DF42002C29E4 /* GiltSalesClient.m */,
+				35D26C0C14E5BDAA009E6188 /* GiltProductClient.h */,
+				35D26C0D14E5BDAA009E6188 /* GiltProductClient.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		359C1DF414D1C5AB00010224 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				35384D5514D1DE67002C29E4 /* Client */,
+				3170E1F314DB4BE100659527 /* Helpers */,
+				359C1DF514D1C5AB00010224 /* Models */,
+				315C6E0814D9CC5800F5510E /* Parser */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		359C1DF514D1C5AB00010224 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				351A16D114D493ED007C0B00 /* GiltImageCollection.h */,
+				351A16D214D493ED007C0B00 /* GiltImageCollection.m */,
+				35384D3C14D1C6D7002C29E4 /* GiltModel.h */,
+				35384D4314D1C714002C29E4 /* GiltProduct.h */,
+				35384D4414D1C714002C29E4 /* GiltProduct.m */,
+				35384D3E14D1C6EE002C29E4 /* GiltSale.h */,
+				35384D3F14D1C6EE002C29E4 /* GiltSale.m */,
+				35384D4814D1C746002C29E4 /* GiltSku.h */,
+				35384D4914D1C746002C29E4 /* GiltSku.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35171CC014D1BABF000F9ED9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351A16D314D493ED007C0B00 /* GiltImageCollection.h in Headers */,
+				35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */,
+				35384D4014D1C6EE002C29E4 /* GiltSale.h in Headers */,
+				35384D4514D1C714002C29E4 /* GiltProduct.h in Headers */,
+				35384D4A14D1C747002C29E4 /* GiltSku.h in Headers */,
+				315C6E0E14D9CFD800F5510E /* GiltJsonParserDelegate.h in Headers */,
+				315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */,
+				35384D5914D1DF42002C29E4 /* GiltSalesClient.h in Headers */,
+				35384D5D14D1E08E002C29E4 /* GiltApiClient.h in Headers */,
+				3170E1F714DB4D2C00659527 /* GiltUrl.h in Headers */,
+				35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		35171CC114D1BABF000F9ED9 /* GiltApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35171CE614D1BAC0000F9ED9 /* Build configuration list for PBXNativeTarget "GiltApi" */;
+			buildPhases = (
+				35171CBE14D1BABF000F9ED9 /* Sources */,
+				35171CBF14D1BABF000F9ED9 /* Frameworks */,
+				35171CC014D1BABF000F9ED9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiltApi;
+			productName = ApiLib;
+			productReference = 35171CC214D1BABF000F9ED9 /* libGiltApi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		35171CD114D1BABF000F9ED9 /* GiltApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35171CE914D1BAC0000F9ED9 /* Build configuration list for PBXNativeTarget "GiltApiTests" */;
+			buildPhases = (
+				35171CCD14D1BABF000F9ED9 /* Sources */,
+				35171CCE14D1BABF000F9ED9 /* Frameworks */,
+				35171CCF14D1BABF000F9ED9 /* Resources */,
+				35171CD014D1BABF000F9ED9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35171CD914D1BAC0000F9ED9 /* PBXTargetDependency */,
+			);
+			name = GiltApiTests;
+			productName = ApiLibTests;
+			productReference = 35171CD214D1BABF000F9ED9 /* GiltApiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35171CB914D1BABF000F9ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Gilt Groupe";
+			};
+			buildConfigurationList = 35171CBC14D1BABF000F9ED9 /* Build configuration list for PBXProject "GiltApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35171CB714D1BABF000F9ED9;
+			productRefGroup = 35171CC314D1BABF000F9ED9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35171CC114D1BABF000F9ED9 /* GiltApi */,
+				35171CD114D1BABF000F9ED9 /* GiltApiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35171CCF14D1BABF000F9ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171CE014D1BAC0000F9ED9 /* InfoPlist.strings in Resources */,
+				319708B514D1DA0A0013FFDC /* sales.json in Resources */,
+				31E586D314E450BD00120E1E /* product.json in Resources */,
+				31E586D614E4512400120E1E /* product.plist in Resources */,
+				31E586D714E4512400120E1E /* sales.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35171CD014D1BABF000F9ED9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35171CBE14D1BABF000F9ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171CCC14D1BABF000F9ED9 /* GiltApi.m in Sources */,
+				35384D4114D1C6EE002C29E4 /* GiltSale.m in Sources */,
+				35384D4614D1C714002C29E4 /* GiltProduct.m in Sources */,
+				35384D4B14D1C747002C29E4 /* GiltSku.m in Sources */,
+				35384D5A14D1DF42002C29E4 /* GiltSalesClient.m in Sources */,
+				35F58CE814D1F646003891AF /* GiltApiClient.m in Sources */,
+				351A16D414D493ED007C0B00 /* GiltImageCollection.m in Sources */,
+				315C6E1814D9E58C00F5510E /* GiltDefaultJsonParser.m in Sources */,
+				3170E1F814DB4D2C00659527 /* GiltUrl.m in Sources */,
+				35D26C0F14E5BDAA009E6188 /* GiltProductClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35171CCD14D1BABF000F9ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319708AB14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m in Sources */,
+				319708D614D1E5C50013FFDC /* GiltProductTests.m in Sources */,
+				319708D714D1E5C50013FFDC /* GiltSaleTests.m in Sources */,
+				319708D814D1E5C50013FFDC /* GiltSkuTests.m in Sources */,
+				35DA350314D73B620090EE3D /* GiltImageCollectionTest.m in Sources */,
+				3170E1FC14DC313200659527 /* GiltUrlTests.m in Sources */,
+				35FE754C14E5D250003D1458 /* GiltProductsClientTests.m in Sources */,
+				359914E114E60978004BF43F /* GiltSalesClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35171CD914D1BAC0000F9ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35171CC114D1BABF000F9ED9 /* GiltApi */;
+			targetProxy = 35171CD814D1BAC0000F9ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35171CDE14D1BAC0000F9ED9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35171CDF14D1BAC0000F9ED9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35171CE414D1BAC0000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Lib/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		35171CE514D1BAC0000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Lib/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35171CE714D1BAC0000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ApiLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
+				PRODUCT_NAME = GiltApi;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		35171CE814D1BAC0000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ApiLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
+				PRODUCT_NAME = GiltApi;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		35171CEA14D1BAC0000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
+				INFOPLIST_FILE = "ApiLibTests/GiltApiTests-Info.plist";
+				PRODUCT_NAME = GiltApiTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		35171CEB14D1BAC0000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks/**",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
+				INFOPLIST_FILE = "ApiLibTests/GiltApiTests-Info.plist";
+				PRODUCT_NAME = GiltApiTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35171CBC14D1BABF000F9ED9 /* Build configuration list for PBXProject "GiltApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171CE414D1BAC0000F9ED9 /* Debug */,
+				35171CE514D1BAC0000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35171CE614D1BAC0000F9ED9 /* Build configuration list for PBXNativeTarget "GiltApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171CE714D1BAC0000F9ED9 /* Debug */,
+				35171CE814D1BAC0000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35171CE914D1BAC0000F9ED9 /* Build configuration list for PBXNativeTarget "GiltApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171CEA14D1BAC0000F9ED9 /* Debug */,
+				35171CEB14D1BAC0000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35171CB914D1BABF000F9ED9 /* Project object */;
+}

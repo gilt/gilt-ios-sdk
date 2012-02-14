@@ -1,0 +1,87 @@
+{
+  "name": "Fake Product",
+  "brand": "Fake Corp",
+  "skus": [
+    {
+      "inventory_status": "sold out",
+      "attributes": [
+        {
+          "name": "size",
+          "value": "10"
+        },
+        {
+          "name": "color",
+          "value": "choc brown"
+        }
+      ],
+      "id": 1445982,
+      "msrp_price": "449.00",
+      "sale_price": "340.00",
+      "shipping_surcharge": "2.00"
+    },
+    {
+      "inventory_status": "for sale",
+      "attributes": [
+        {
+          "name": "size",
+          "value": "11"
+        },
+        {
+          "name": "color",
+          "value": "choc brown"
+        }
+      ],
+      "id": 1445983,
+      "msrp_price": "449.00",
+      "sale_price": "340.00"
+    }
+  ],
+  "url": "http://www.gilt.com/product/fake",
+  "id": "fake",
+  "product": "https://api.gilt.com/v1/products/1268792864/detail.json",
+  "content": {
+    "fit_notes": "like a glove",
+    "origin": "China",
+    "description": "test description",
+    "material": "Stainless steel and plastic",
+    "care_instructions": "test instructions"
+  },
+  "image_urls": {
+    "100x100": [
+      {
+        "url": "http://cdn1.gilt.com/images/1/100x100.jpg",
+        "height": 100,
+        "width": 100
+      },
+      {
+        "url": "http://cdn1.gilt.com/images/2/100x100.jpg",
+        "height": 100,
+        "width": 100
+      }
+    ],
+    "300x300": [
+      {
+        "url": "http://cdn1.gilt.com/images/1/300x300.jpg",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "http://cdn1.gilt.com/images/2/300x300.jpg",
+        "height": 300,
+        "width": 300
+      }
+    ],
+    "91x121": [
+      {
+        "url": "http://cdn1.gilt.com/images/1/91x121.jpg",
+        "height": 121,
+        "width": 91
+      },
+      {
+        "url": "http://cdn1.gilt.com/images/2/91x121.jpg",
+        "height": 121,
+        "width": 91
+      }
+    ]
+  }
+}

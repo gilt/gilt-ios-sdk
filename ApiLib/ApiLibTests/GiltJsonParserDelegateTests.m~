@@ -1,0 +1,73 @@
+//
+//  GiltJsonParserDelegateTests.m
+//  GiltApi
+//
+//  Created by Louis Vera on 1/26/12.
+//  Copyright (c) 2012 Gilt Groupe. All rights reserved.
+//
+
+#import "GiltJsonParserDelegateTests.h"
+#import "GiltApi.h"
+
+/**
+ * A simple test for json parser compatibility
+ */
+@implementation GiltJsonParserDelegateTests
+
+/**
+ * Test whether a json parser gives us what we expect for a fake sales response 
+ */
+- (void)testParseSales
+{
+    NSString * sale = [NSString stringWithContentsOfFile:@"ApiLibTests/Data/sales.json" 
+                                                encoding:NSUTF8StringEncoding error:nil];
+<<<<<<< HEAD
+    NSDictionary * saleDictionary = (NSDictionary *)[[[GiltApi sharedInstance].jsonParserDelegate parser] objectWithString:sale];
+    NSDictionary * expected = [[NSDictionary alloc] initWithContentsOfFile:@"ApiLibTests/Data/sale.plist"];
+    STAssertEqualObjects(saleDictionary, expected, @"Parsing sale failed");
+=======
+    NSDictionary * saleDictionary = (NSDictionary *)[[[GiltApi sharedInstance] jsonParserDelegate] objectWithString:sale];
+    NSDictionary * expected = [[NSDictionary alloc] initWithContentsOfFile:@"ApiLibTests/Data/sales.plist"];
+    STAssertEqualObjects(saleDictionary, expected, @"Parsing sales failed");
+>>>>>>> nojira: updating fake data to reflect api changes, updating json parser test
+}
+
+/**
+ * Test whether a json parser gives us what we expect for a fake product response 
+ */
+- (void)testParseProduct
+{
+<<<<<<< HEAD
+    NSString * sales = [NSString stringWithContentsOfFile:@"ApiLibTests/Data/sales.json" 
+                                                 encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary * salesDictionary = (NSDictionary *)[[[GiltApi sharedInstance].jsonParserDelegate parser] objectWithString:sales];
+    NSArray * expected = [[NSArray alloc] initWithContentsOfFile:@"ApiLibTests/Data/sales.plist"];
+    STAssertEqualObjects(salesDictionary, expected, @"Parsing sales list failed");
+}
+
+- (void)testParseSaleWithProductDetails
+{
+    NSString * sale = [NSString stringWithContentsOfFile:@"ApiLibTests/Data/sale_with_product_details.json" 
+                                                encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary * saleDictionary = (NSDictionary *)[[[GiltApi sharedInstance].jsonParserDelegate parser] objectWithString:sale];
+    NSDictionary * expected = [[NSDictionary alloc] initWithContentsOfFile:@"ApiLibTests/Data/sale_with_product_details.plist"];
+    STAssertEqualObjects(saleDictionary, expected, @"Parsing sale with product detail failed");
+}
+
+- (void)testParseSalesListWithProductDetails
+{
+    NSString * everything = [NSString stringWithContentsOfFile:@"ApiLibTests/Data/sales_with_product_details.json" 
+                                                      encoding:NSUTF8StringEncoding error:nil];
+    NSArray * salesList = (NSArray *)[[[GiltApi sharedInstance].jsonParserDelegate parser] objectWithString:everything];
+    NSArray * expected = [[NSArray alloc] initWithContentsOfFile:@"ApiLibTests/Data/sales_with_product_details.plist"];
+    STAssertEqualObjects(salesList, expected, @"Parsing sales list with product details failed");
+=======
+    NSString * product = [NSString stringWithContentsOfFile:@"ApiLibTests/Data/product.json" 
+                                                encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary * productDictionary = (NSDictionary *)[[[GiltApi sharedInstance] jsonParserDelegate] objectWithString:product];
+    NSDictionary * expected = [[NSDictionary alloc] initWithContentsOfFile:@"ApiLibTests/Data/product.plist"];
+    STAssertEqualObjects(productDictionary, expected, @"Parsing product failed");
+>>>>>>> nojira: updating fake data to reflect api changes, updating json parser test
+}
+
+@end

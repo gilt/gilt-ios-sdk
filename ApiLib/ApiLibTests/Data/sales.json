@@ -1,0 +1,91 @@
+{
+  "sales": [
+    {
+      "name": "Winter Weather",
+      "sale_url": "http://www.gilt.com/sale/men/winter-weather-48",
+      "ends": "2012-02-07T17:00:00Z",
+      "store": "men",
+      "products": [
+        "https://api.gilt.com/v1/products/124344157/detail.json",
+        "https://api.gilt.com/v1/products/121737201/detail.json",
+        "https://api.gilt.com/v1/products/25300134/detail.json",
+        "https://api.gilt.com/v1/products/124344160/detail.json",
+        "https://api.gilt.com/v1/products/89010167/detail.json",
+        "https://api.gilt.com/v1/products/90624607/detail.json",
+        "https://api.gilt.com/v1/products/76425483/detail.json",
+        "https://api.gilt.com/v1/products/93655889/detail.json",
+        "https://api.gilt.com/v1/products/76425469/detail.json",
+        "https://api.gilt.com/v1/products/89902375/detail.json",
+        "https://api.gilt.com/v1/products/85378750/detail.json",
+        "https://api.gilt.com/v1/products/85378622/detail.json",
+        "https://api.gilt.com/v1/products/54603610/detail.json",
+        "https://api.gilt.com/v1/products/54603543/detail.json",
+        "https://api.gilt.com/v1/products/54603571/detail.json"
+      ],
+      "sale_key": "key1",
+      "sale": "https://api.gilt.com/v1/sales/men/winter-weather-48/detail.json",
+      "image_urls": {
+        "91x121": [
+          {
+            "url": "http://cdn1.gilt.com/images/1/91x121.jpg",
+            "height": 121,
+            "width": 91
+          },
+          {
+            "url": "http://cdn1.gilt.com/images/2/91x121.jpg",
+            "height": 121,
+            "width": 91
+          }
+        ],
+        "300x184": [
+          {
+            "url": "http://cdn1.gilt.com/images/1/300x184.jpg",
+            "height": 184,
+            "width": 300
+          },
+          {
+            "url": "http://cdn1.gilt.com/images/2/300x184.jpg",
+            "height": 184,
+            "width": 300
+          }
+        ]
+      },
+      "description": "Get out of the cold and into these great blah blah blah",
+      "begins": "2012-02-04T17:00:00Z"
+    },
+    {
+      "name": "Winter Weather",
+      "sale_url": "http://www.gilt.com/sale/men/winter-weather-48",
+      "store": "men",
+      "sale_key": "key2",
+      "sale": "https://api.gilt.com/v1/sales/men/winter-weather-48/detail.json",
+      "image_urls": {
+        "91x121": [
+          {
+            "url": "http://cdn1.gilt.com/images/1/91x121.jpg",
+            "height": 121,
+            "width": 91
+          },
+          {
+            "url": "http://cdn1.gilt.com/images/2/91x121.jpg",
+            "height": 121,
+            "width": 91
+          }
+        ],
+        "300x184": [
+          {
+            "url": "http://cdn1.gilt.com/images/1/300x184.jpg",
+            "height": 184,
+            "width": 300
+          },
+          {
+            "url": "http://cdn1.gilt.com/images/2/300x184.jpg",
+            "height": 184,
+            "width": 300
+          }
+        ]
+      },
+      "begins": "2012-02-04T17:00:00Z"
+    }
+  ]
+}

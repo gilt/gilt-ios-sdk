@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31D543BC14E5E6F800870EE2 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D543BB14E5E6F800870EE2 /* libGiltApi.a */; };
+		3509E13414D3093C00A1C003 /* SalesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3509E13314D3093C00A1C003 /* SalesTableViewCell.m */; };
+		3509E13814D3120D00A1C003 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3509E13714D3120D00A1C003 /* ProductTableViewCell.m */; };
+		35171CFC14D1BB4C000F9ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFB14D1BB4C000F9ED9 /* UIKit.framework */; };
+		35171CFE14D1BB4C000F9ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFD14D1BB4C000F9ED9 /* Foundation.framework */; };
+		35171D0014D1BB4C000F9ED9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFF14D1BB4C000F9ED9 /* CoreGraphics.framework */; };
+		35171D0614D1BB4C000F9ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35171D0414D1BB4C000F9ED9 /* InfoPlist.strings */; };
+		35171D0814D1BB4C000F9ED9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D0714D1BB4C000F9ED9 /* main.m */; };
+		35171D0C14D1BB4C000F9ED9 /* GAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D0B14D1BB4C000F9ED9 /* GAppDelegate.m */; };
+		35171D0F14D1BB4C000F9ED9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35171D0D14D1BB4C000F9ED9 /* MainStoryboard_iPhone.storyboard */; };
+		35171D1514D1BB4C000F9ED9 /* SalesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D1414D1BB4C000F9ED9 /* SalesViewController.m */; };
+		35171D1814D1BB4C000F9ED9 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D1714D1BB4C000F9ED9 /* ProductsViewController.m */; };
+		35171D2014D1BB4C000F9ED9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171D1F14D1BB4C000F9ED9 /* SenTestingKit.framework */; };
+		35171D2114D1BB4C000F9ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFB14D1BB4C000F9ED9 /* UIKit.framework */; };
+		35171D2214D1BB4C000F9ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFD14D1BB4C000F9ED9 /* Foundation.framework */; };
+		35171D2A14D1BB4C000F9ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35171D2814D1BB4C000F9ED9 /* InfoPlist.strings */; };
+		35171D2D14D1BB4C000F9ED9 /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */; };
+		35983A9014D32EFF00DBF488 /* MultiSkuProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */; };
+		35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35983A9214D339B500DBF488 /* CoreImage.framework */; };
+		35983A9614D33E3000DBF488 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A9514D33E3000DBF488 /* NSString+MD5.m */; };
+		35983A9914D340EB00DBF488 /* ImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A9814D340EB00DBF488 /* ImageFetcher.m */; };
+		35983A9C14D35BF800DBF488 /* UIImage+Scaling.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A9B14D35BF800DBF488 /* UIImage+Scaling.m */; };
+		35D26C0114E47995009E6188 /* GiltApi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35D26C0014E47995009E6188 /* GiltApi.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35171D2314D1BB4C000F9ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35171CEE14D1BB4C000F9ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35171CF614D1BB4C000F9ED9;
+			remoteInfo = KitchenSink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31D543BB14E5E6F800870EE2 /* libGiltApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGiltApi.a; path = "../ApiLib/build/Release-iphoneos/libGiltApi.a"; sourceTree = "<group>"; };
+		3509E13214D3093C00A1C003 /* SalesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesTableViewCell.h; sourceTree = "<group>"; };
+		3509E13314D3093C00A1C003 /* SalesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesTableViewCell.m; sourceTree = "<group>"; };
+		3509E13614D3120D00A1C003 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		3509E13714D3120D00A1C003 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		35171CF714D1BB4C000F9ED9 /* KitchenSink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenSink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35171CFB14D1BB4C000F9ED9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35171CFD14D1BB4C000F9ED9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35171CFF14D1BB4C000F9ED9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35171D0314D1BB4C000F9ED9 /* KitchenSink-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSink-Info.plist"; sourceTree = "<group>"; };
+		35171D0514D1BB4C000F9ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35171D0714D1BB4C000F9ED9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35171D0914D1BB4C000F9ED9 /* KitchenSink-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KitchenSink-Prefix.pch"; sourceTree = "<group>"; };
+		35171D0A14D1BB4C000F9ED9 /* GAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAppDelegate.h; sourceTree = "<group>"; };
+		35171D0B14D1BB4C000F9ED9 /* GAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAppDelegate.m; sourceTree = "<group>"; };
+		35171D0E14D1BB4C000F9ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		35171D1314D1BB4C000F9ED9 /* SalesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalesViewController.h; sourceTree = "<group>"; };
+		35171D1414D1BB4C000F9ED9 /* SalesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SalesViewController.m; sourceTree = "<group>"; };
+		35171D1614D1BB4C000F9ED9 /* ProductsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewController.h; sourceTree = "<group>"; };
+		35171D1714D1BB4C000F9ED9 /* ProductsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductsViewController.m; sourceTree = "<group>"; };
+		35171D1E14D1BB4C000F9ED9 /* KitchenSinkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KitchenSinkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35171D1F14D1BB4C000F9ED9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		35171D2714D1BB4C000F9ED9 /* KitchenSinkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KitchenSinkTests-Info.plist"; sourceTree = "<group>"; };
+		35171D2914D1BB4C000F9ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35171D2B14D1BB4C000F9ED9 /* KitchenSinkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenSinkTests.h; sourceTree = "<group>"; };
+		35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
+		35983A8E14D32EFF00DBF488 /* MultiSkuProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSkuProductTableViewCell.h; sourceTree = "<group>"; };
+		35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSkuProductTableViewCell.m; sourceTree = "<group>"; };
+		35983A9214D339B500DBF488 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		35983A9414D33E3000DBF488 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		35983A9514D33E3000DBF488 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		35983A9714D340EB00DBF488 /* ImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetcher.h; sourceTree = "<group>"; };
+		35983A9814D340EB00DBF488 /* ImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcher.m; sourceTree = "<group>"; };
+		35983A9A14D35BF800DBF488 /* UIImage+Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scaling.h"; sourceTree = "<group>"; };
+		35983A9B14D35BF800DBF488 /* UIImage+Scaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scaling.m"; sourceTree = "<group>"; };
+		35D26C0014E47995009E6188 /* GiltApi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GiltApi.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35171CF414D1BB4C000F9ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D543BC14E5E6F800870EE2 /* libGiltApi.a in Frameworks */,
+				35171CFC14D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
+				35171CFE14D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
+				35171D0014D1BB4C000F9ED9 /* CoreGraphics.framework in Frameworks */,
+				35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35171D1A14D1BB4C000F9ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171D2014D1BB4C000F9ED9 /* SenTestingKit.framework in Frameworks */,
+				35171D2114D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
+				35171D2214D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35171CEC14D1BB4C000F9ED9 = {
+			isa = PBXGroup;
+			children = (
+				31D543BB14E5E6F800870EE2 /* libGiltApi.a */,
+				35983A9214D339B500DBF488 /* CoreImage.framework */,
+				35171D0114D1BB4C000F9ED9 /* KitchenSink */,
+				35171D2514D1BB4C000F9ED9 /* KitchenSinkTests */,
+				35171CFA14D1BB4C000F9ED9 /* Frameworks */,
+				35171CF814D1BB4C000F9ED9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35171CF814D1BB4C000F9ED9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35171CF714D1BB4C000F9ED9 /* KitchenSink.app */,
+				35171D1E14D1BB4C000F9ED9 /* KitchenSinkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35171CFA14D1BB4C000F9ED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35171CFB14D1BB4C000F9ED9 /* UIKit.framework */,
+				35171CFD14D1BB4C000F9ED9 /* Foundation.framework */,
+				35171CFF14D1BB4C000F9ED9 /* CoreGraphics.framework */,
+				35171D1F14D1BB4C000F9ED9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35171D0114D1BB4C000F9ED9 /* KitchenSink */ = {
+			isa = PBXGroup;
+			children = (
+				35171D0A14D1BB4C000F9ED9 /* GAppDelegate.h */,
+				35171D0B14D1BB4C000F9ED9 /* GAppDelegate.m */,
+				35171D0D14D1BB4C000F9ED9 /* MainStoryboard_iPhone.storyboard */,
+				35171D1314D1BB4C000F9ED9 /* SalesViewController.h */,
+				35171D1414D1BB4C000F9ED9 /* SalesViewController.m */,
+				35171D1614D1BB4C000F9ED9 /* ProductsViewController.h */,
+				35171D1714D1BB4C000F9ED9 /* ProductsViewController.m */,
+				3509E13214D3093C00A1C003 /* SalesTableViewCell.h */,
+				3509E13314D3093C00A1C003 /* SalesTableViewCell.m */,
+				3509E13614D3120D00A1C003 /* ProductTableViewCell.h */,
+				3509E13714D3120D00A1C003 /* ProductTableViewCell.m */,
+				35983A8E14D32EFF00DBF488 /* MultiSkuProductTableViewCell.h */,
+				35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */,
+				35983A9414D33E3000DBF488 /* NSString+MD5.h */,
+				35983A9514D33E3000DBF488 /* NSString+MD5.m */,
+				35983A9714D340EB00DBF488 /* ImageFetcher.h */,
+				35983A9814D340EB00DBF488 /* ImageFetcher.m */,
+				35983A9A14D35BF800DBF488 /* UIImage+Scaling.h */,
+				35983A9B14D35BF800DBF488 /* UIImage+Scaling.m */,
+				35171D0214D1BB4C000F9ED9 /* Supporting Files */,
+			);
+			path = KitchenSink;
+			sourceTree = "<group>";
+		};
+		35171D0214D1BB4C000F9ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35171D0314D1BB4C000F9ED9 /* KitchenSink-Info.plist */,
+				35171D0414D1BB4C000F9ED9 /* InfoPlist.strings */,
+				35171D0714D1BB4C000F9ED9 /* main.m */,
+				35171D0914D1BB4C000F9ED9 /* KitchenSink-Prefix.pch */,
+				35D26C0014E47995009E6188 /* GiltApi.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35171D2514D1BB4C000F9ED9 /* KitchenSinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				35171D2B14D1BB4C000F9ED9 /* KitchenSinkTests.h */,
+				35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */,
+				35171D2614D1BB4C000F9ED9 /* Supporting Files */,
+			);
+			path = KitchenSinkTests;
+			sourceTree = "<group>";
+		};
+		35171D2614D1BB4C000F9ED9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35171D2714D1BB4C000F9ED9 /* KitchenSinkTests-Info.plist */,
+				35171D2814D1BB4C000F9ED9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35171CF614D1BB4C000F9ED9 /* KitchenSink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35171D3014D1BB4C000F9ED9 /* Build configuration list for PBXNativeTarget "KitchenSink" */;
+			buildPhases = (
+				35171CF314D1BB4C000F9ED9 /* Sources */,
+				35171CF414D1BB4C000F9ED9 /* Frameworks */,
+				35171CF514D1BB4C000F9ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KitchenSink;
+			productName = KitchenSink;
+			productReference = 35171CF714D1BB4C000F9ED9 /* KitchenSink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35171D1D14D1BB4C000F9ED9 /* KitchenSinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35171D3314D1BB4C000F9ED9 /* Build configuration list for PBXNativeTarget "KitchenSinkTests" */;
+			buildPhases = (
+				35171D1914D1BB4C000F9ED9 /* Sources */,
+				35171D1A14D1BB4C000F9ED9 /* Frameworks */,
+				35171D1B14D1BB4C000F9ED9 /* Resources */,
+				35171D1C14D1BB4C000F9ED9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35171D2414D1BB4C000F9ED9 /* PBXTargetDependency */,
+			);
+			name = KitchenSinkTests;
+			productName = KitchenSinkTests;
+			productReference = 35171D1E14D1BB4C000F9ED9 /* KitchenSinkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35171CEE14D1BB4C000F9ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Gilt Groupe";
+			};
+			buildConfigurationList = 35171CF114D1BB4C000F9ED9 /* Build configuration list for PBXProject "KitchenSink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35171CEC14D1BB4C000F9ED9;
+			productRefGroup = 35171CF814D1BB4C000F9ED9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35171CF614D1BB4C000F9ED9 /* KitchenSink */,
+				35171D1D14D1BB4C000F9ED9 /* KitchenSinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35171CF514D1BB4C000F9ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171D0614D1BB4C000F9ED9 /* InfoPlist.strings in Resources */,
+				35171D0F14D1BB4C000F9ED9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				35D26C0114E47995009E6188 /* GiltApi.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35171D1B14D1BB4C000F9ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171D2A14D1BB4C000F9ED9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35171D1C14D1BB4C000F9ED9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35171CF314D1BB4C000F9ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171D0814D1BB4C000F9ED9 /* main.m in Sources */,
+				35171D0C14D1BB4C000F9ED9 /* GAppDelegate.m in Sources */,
+				35171D1514D1BB4C000F9ED9 /* SalesViewController.m in Sources */,
+				35171D1814D1BB4C000F9ED9 /* ProductsViewController.m in Sources */,
+				3509E13414D3093C00A1C003 /* SalesTableViewCell.m in Sources */,
+				3509E13814D3120D00A1C003 /* ProductTableViewCell.m in Sources */,
+				35983A9014D32EFF00DBF488 /* MultiSkuProductTableViewCell.m in Sources */,
+				35983A9614D33E3000DBF488 /* NSString+MD5.m in Sources */,
+				35983A9914D340EB00DBF488 /* ImageFetcher.m in Sources */,
+				35983A9C14D35BF800DBF488 /* UIImage+Scaling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35171D1914D1BB4C000F9ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35171D2D14D1BB4C000F9ED9 /* KitchenSinkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35171D2414D1BB4C000F9ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35171CF614D1BB4C000F9ED9 /* KitchenSink */;
+			targetProxy = 35171D2314D1BB4C000F9ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35171D0414D1BB4C000F9ED9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35171D0514D1BB4C000F9ED9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35171D0D14D1BB4C000F9ED9 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35171D0E14D1BB4C000F9ED9 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		35171D2814D1BB4C000F9ED9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35171D2914D1BB4C000F9ED9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35171D2E14D1BB4C000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../ApiLib/ApiLib/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35171D2F14D1BB4C000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "../ApiLib/ApiLib/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35171D3114D1BB4C000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35171D3214D1BB4C000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		35171D3414D1BB4C000F9ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSink.app/KitchenSink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		35171D3514D1BB4C000F9ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KitchenSink.app/KitchenSink";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
+				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35171CF114D1BB4C000F9ED9 /* Build configuration list for PBXProject "KitchenSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171D2E14D1BB4C000F9ED9 /* Debug */,
+				35171D2F14D1BB4C000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35171D3014D1BB4C000F9ED9 /* Build configuration list for PBXNativeTarget "KitchenSink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171D3114D1BB4C000F9ED9 /* Debug */,
+				35171D3214D1BB4C000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35171D3314D1BB4C000F9ED9 /* Build configuration list for PBXNativeTarget "KitchenSinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35171D3414D1BB4C000F9ED9 /* Debug */,
+				35171D3514D1BB4C000F9ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35171CEE14D1BB4C000F9ED9 /* Project object */;
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brand</key>
+	<string>Fake Corp</string>
+	<key>content</key>
+	<dict>
+		<key>care_instructions</key>
+		<string>test instructions</string>
+		<key>description</key>
+		<string>test description</string>
+		<key>fit_notes</key>
+		<string>like a glove</string>
+		<key>material</key>
+		<string>Stainless steel and plastic</string>
+		<key>origin</key>
+		<string>China</string>
+	</dict>
+	<key>id</key>
+	<string>fake</string>
+	<key>image_urls</key>
+	<dict>
+		<key>100x100</key>
+		<array>
+			<dict>
+				<key>height</key>
+				<integer>100</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/1/100x100.jpg</string>
+				<key>width</key>
+				<integer>100</integer>
+			</dict>
+			<dict>
+				<key>height</key>
+				<integer>100</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/2/100x100.jpg</string>
+				<key>width</key>
+				<integer>100</integer>
+			</dict>
+		</array>
+		<key>300x300</key>
+		<array>
+			<dict>
+				<key>height</key>
+				<integer>300</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/1/300x300.jpg</string>
+				<key>width</key>
+				<integer>300</integer>
+			</dict>
+			<dict>
+				<key>height</key>
+				<integer>300</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/2/300x300.jpg</string>
+				<key>width</key>
+				<integer>300</integer>
+			</dict>
+		</array>
+		<key>91x121</key>
+		<array>
+			<dict>
+				<key>height</key>
+				<integer>121</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/1/91x121.jpg</string>
+				<key>width</key>
+				<integer>91</integer>
+			</dict>
+			<dict>
+				<key>height</key>
+				<integer>121</integer>
+				<key>url</key>
+				<string>http://cdn1.gilt.com/images/2/91x121.jpg</string>
+				<key>width</key>
+				<integer>91</integer>
+			</dict>
+		</array>
+	</dict>
+	<key>name</key>
+	<string>Fake Product</string>
+	<key>product</key>
+	<string>https://api.gilt.com/v1/products/1268792864/detail.json</string>
+	<key>skus</key>
+	<array>
+		<dict>
+			<key>attributes</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>value</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>color</string>
+					<key>value</key>
+					<string>choc brown</string>
+				</dict>
+			</array>
+			<key>id</key>
+			<integer>1445982</integer>
+			<key>inventory_status</key>
+			<string>sold out</string>
+			<key>msrp_price</key>
+			<string>449.00</string>
+			<key>sale_price</key>
+			<string>340.00</string>
+			<key>shipping_surcharge</key>
+			<string>2.00</string>
+		</dict>
+		<dict>
+			<key>attributes</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>size</string>
+					<key>value</key>
+					<string>11</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>color</string>
+					<key>value</key>
+					<string>choc brown</string>
+				</dict>
+			</array>
+			<key>id</key>
+			<integer>1445983</integer>
+			<key>inventory_status</key>
+			<string>for sale</string>
+			<key>msrp_price</key>
+			<string>449.00</string>
+			<key>sale_price</key>
+			<string>340.00</string>
+		</dict>
+	</array>
+	<key>url</key>
+	<string>http://www.gilt.com/product/fake</string>
+</dict>
+</plist>
