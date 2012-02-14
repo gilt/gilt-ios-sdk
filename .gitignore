@@ -13,6 +13,10 @@ GiltApi.plist
 *.un~
 Session.vim
 
+# emacs
+*~
+\#*#
+
 # Xcode
 build/*
 *.pbxuser
