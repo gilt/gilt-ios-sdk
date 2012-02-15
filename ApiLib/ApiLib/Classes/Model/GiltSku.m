@@ -44,12 +44,12 @@
     BOOL match = FALSE;
     if ([object isKindOfClass:[self class]]) {
         GiltSku *other = (GiltSku *)object;
-        match = [other.identifier isEqualToNumber:self.identifier]
-                && [other.inventoryStatus isEqualToString:self.inventoryStatus]
-                && [other.msrpPrice isEqualToNumber:self.msrpPrice] 
-                && [other.salePrice isEqualToNumber:self.salePrice]
-                && [other.shippingSurcharge isEqualToNumber:self.shippingSurcharge]
-                && [other.attributes isEqualToDictionary:self.attributes];
+        match =    ((other.identifier == identifier)            || [other.identifier isEqualToNumber:identifier])
+                && ((other.inventoryStatus == inventoryStatus)  || [other.inventoryStatus isEqualToString:inventoryStatus])
+                && ((other.msrpPrice == msrpPrice)              || [other.msrpPrice isEqualToNumber:msrpPrice])
+                && ((other.salePrice == salePrice)              || [other.salePrice isEqualToNumber:salePrice])
+                && ((other.shippingSurcharge == shippingSurcharge) || [other.shippingSurcharge isEqualToNumber:shippingSurcharge])
+                && ((other.attributes == attributes)            || [other.attributes isEqualToDictionary:attributes]);
     }
     return match;
 }
