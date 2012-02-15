@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		315C6E0E14D9CFD800F5510E /* GiltJsonParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 315C6E0D14D9CFD800F5510E /* GiltJsonParserDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 315C6E1514D9E58C00F5510E /* GiltDefaultJsonParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 315C6E1514D9E58C00F5510E /* GiltDefaultJsonParser.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		315C6E1814D9E58C00F5510E /* GiltDefaultJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 315C6E1614D9E58C00F5510E /* GiltDefaultJsonParser.m */; };
-		3170E1F714DB4D2C00659527 /* GiltUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3170E1F514DB4D2C00659527 /* GiltUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3170E1F714DB4D2C00659527 /* GiltUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3170E1F514DB4D2C00659527 /* GiltUrl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3170E1F814DB4D2C00659527 /* GiltUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3170E1F614DB4D2C00659527 /* GiltUrl.m */; };
 		3170E1FC14DC313200659527 /* GiltUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3170E1FB14DC313200659527 /* GiltUrlTests.m */; };
 		319708AB14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319708AA14D1D0B50013FFDC /* GiltJsonParserDelegateTests.m */; };
@@ -31,7 +31,7 @@
 		351A16D414D493ED007C0B00 /* GiltImageCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 351A16D214D493ED007C0B00 /* GiltImageCollection.m */; };
 		351A16D714D49A85007C0B00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D614D49A85007C0B00 /* CoreGraphics.framework */; };
 		351A16D914D49B7F007C0B00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D814D49B7F007C0B00 /* UIKit.framework */; };
-		35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D3C14D1C6D7002C29E4 /* GiltModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D3C14D1C6D7002C29E4 /* GiltModel.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		35384D4014D1C6EE002C29E4 /* GiltSale.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D3E14D1C6EE002C29E4 /* GiltSale.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35384D4114D1C6EE002C29E4 /* GiltSale.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D3F14D1C6EE002C29E4 /* GiltSale.m */; };
 		35384D4514D1C714002C29E4 /* GiltProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D4314D1C714002C29E4 /* GiltProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,9 +40,10 @@
 		35384D4B14D1C747002C29E4 /* GiltSku.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D4914D1C746002C29E4 /* GiltSku.m */; };
 		35384D5914D1DF42002C29E4 /* GiltSalesClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D5714D1DF42002C29E4 /* GiltSalesClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35384D5A14D1DF42002C29E4 /* GiltSalesClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35384D5814D1DF42002C29E4 /* GiltSalesClient.m */; };
-		35384D5D14D1E08E002C29E4 /* GiltApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D5C14D1E08E002C29E4 /* GiltApiClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35384D5D14D1E08E002C29E4 /* GiltApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35384D5C14D1E08E002C29E4 /* GiltApiClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		35463E3814EC5D7300DAF7B3 /* GiltApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 35171CCA14D1BABF000F9ED9 /* GiltApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		359914E114E60978004BF43F /* GiltSalesClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 359914E014E60978004BF43F /* GiltSalesClientTests.m */; };
-		35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D26C0C14E5BDAA009E6188 /* GiltProductClient.h */; };
+		35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 35D26C0C14E5BDAA009E6188 /* GiltProductClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35D26C0F14E5BDAA009E6188 /* GiltProductClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D26C0D14E5BDAA009E6188 /* GiltProductClient.m */; };
 		35DA350014D4ADFA0090EE3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351A16D814D49B7F007C0B00 /* UIKit.framework */; };
 		35DA350314D73B620090EE3D /* GiltImageCollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DA350214D73B620090EE3D /* GiltImageCollectionTest.m */; };
@@ -299,17 +300,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35463E3814EC5D7300DAF7B3 /* GiltApi.h in Headers */,
 				351A16D314D493ED007C0B00 /* GiltImageCollection.h in Headers */,
-				35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */,
-				35384D4014D1C6EE002C29E4 /* GiltSale.h in Headers */,
-				35384D4514D1C714002C29E4 /* GiltProduct.h in Headers */,
-				35384D4A14D1C747002C29E4 /* GiltSku.h in Headers */,
 				315C6E0E14D9CFD800F5510E /* GiltJsonParserDelegate.h in Headers */,
-				315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */,
+				35384D4514D1C714002C29E4 /* GiltProduct.h in Headers */,
+				35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */,
+				35384D4014D1C6EE002C29E4 /* GiltSale.h in Headers */,
+				35384D4A14D1C747002C29E4 /* GiltSku.h in Headers */,
 				35384D5914D1DF42002C29E4 /* GiltSalesClient.h in Headers */,
 				35384D5D14D1E08E002C29E4 /* GiltApiClient.h in Headers */,
+				315C6E1714D9E58C00F5510E /* GiltDefaultJsonParser.h in Headers */,
+				35384D3D14D1C6D7002C29E4 /* GiltModel.h in Headers */,
 				3170E1F714DB4D2C00659527 /* GiltUrl.h in Headers */,
-				35D26C0E14E5BDAA009E6188 /* GiltProductClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +493,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -513,6 +516,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -524,7 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
 				PRODUCT_NAME = GiltApi;
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/GiltApi;
 			};
 			name = Debug;
 		};
@@ -535,7 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApiLib/GiltApi-Prefix.pch";
 				PRODUCT_NAME = GiltApi;
-				SKIP_INSTALL = YES;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../Headers/GiltApi;
 			};
 			name = Release;
 		};

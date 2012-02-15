@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "GiltJsonParserDelegate.h"
 #import "GiltImageCollection.h"
-#import "GiltModel.h"
 #import "GiltProduct.h"
+#import "GiltProductClient.h"
 #import "GiltSale.h"
 #import "GiltSalesClient.h"
 #import "GiltSku.h"
-#import "GiltProductClient.h"
 
 @interface GiltApi : NSObject
 

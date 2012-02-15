@@ -10,7 +10,7 @@
 #import <CoreImage/CoreImage.h>
 #import "ImageFetcher.h"
 #import "GAppDelegate.h"
-#import "GiltApi.h"
+#import <GiltApi/GiltApi.h>
 #import "NSString+MD5.h"
 #import "UIImage+Scaling.h"
 

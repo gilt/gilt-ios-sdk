@@ -56,7 +56,9 @@
 + (GiltProduct *)fetchSynchronousProduct:(NSURL *)productUrl 
                                  timeout:(NSTimeInterval)timeout 
                                    error:(NSError **)error {
-    *error = nil;
+    if (error) {
+        *error = nil;
+    }
     if (timeout <= 0.) {
         timeout = 30.0;
     }

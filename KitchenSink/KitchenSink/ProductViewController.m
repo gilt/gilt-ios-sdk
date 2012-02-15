@@ -7,7 +7,7 @@
 //
 
 #import "ProductViewController.h"
-#import "GiltApi.h"
+#import <GiltApi/GiltApi.h>
 
 @interface ProductViewController (private)
 - (void)updateDisplay;

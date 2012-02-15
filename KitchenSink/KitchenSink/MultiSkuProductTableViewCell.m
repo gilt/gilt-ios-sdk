@@ -7,7 +7,7 @@
 //
 
 #import "MultiSkuProductTableViewCell.h"
-#import "GiltApi.h"
+#import <GiltApi/GiltApi.h>
 #import "ImageFetcher.h"
 #import "UIImage+Scaling.h"
 

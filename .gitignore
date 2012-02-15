@@ -28,9 +28,10 @@ build/*
 *.perspectivev3
 !default.perspectivev3
 *.xcworkspace
-!default.xcworkspace
+!GiltSDKWorkspace.xcworkspace
 */*.xcodeproj/*.xcworkspace/xcuserdata
 */*.xcodeproj/xcuserdata
+*.xcworkspace/xcuserdata
 profile
 *.moved-aside
 

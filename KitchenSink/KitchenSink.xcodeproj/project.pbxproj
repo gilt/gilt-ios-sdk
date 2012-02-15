@@ -24,10 +24,7 @@
 		35171D2A14D1BB4C000F9ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35171D2814D1BB4C000F9ED9 /* InfoPlist.strings */; };
 		35171D2D14D1BB4C000F9ED9 /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */; };
 		35463E2514EC1B7A00DAF7B3 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35463E2414EC1B7A00DAF7B3 /* ProductViewController.m */; };
-		35463E2A14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */; };
-		35463E2B14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */; };
-		35463E2D14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */; };
-		35463E2E14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */; };
+		35463E3A14EC5FEE00DAF7B3 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E3914EC5FEE00DAF7B3 /* libGiltApi.a */; };
 		35983A9014D32EFF00DBF488 /* MultiSkuProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */; };
 		35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35983A9214D339B500DBF488 /* CoreImage.framework */; };
 		35983A9614D33E3000DBF488 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A9514D33E3000DBF488 /* NSString+MD5.m */; };
@@ -74,8 +71,7 @@
 		35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
 		35463E2314EC1B7A00DAF7B3 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		35463E2414EC1B7A00DAF7B3 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
-		35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGiltApi.a; sourceTree = "<group>"; };
-		35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGiltApi-Simulator.a"; sourceTree = "<group>"; };
+		35463E3914EC5FEE00DAF7B3 /* libGiltApi.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libGiltApi.a; path = "../ApiLib/build/Release-iphoneos/libGiltApi.a"; sourceTree = "<group>"; };
 		35983A8E14D32EFF00DBF488 /* MultiSkuProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSkuProductTableViewCell.h; sourceTree = "<group>"; };
 		35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSkuProductTableViewCell.m; sourceTree = "<group>"; };
 		35983A9214D339B500DBF488 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -93,12 +89,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35463E3A14EC5FEE00DAF7B3 /* libGiltApi.a in Frameworks */,
 				35171CFC14D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
 				35171CFE14D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
 				35171D0014D1BB4C000F9ED9 /* CoreGraphics.framework in Frameworks */,
 				35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */,
-				35463E2A14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */,
-				35463E2D14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,8 +104,6 @@
 				35171D2014D1BB4C000F9ED9 /* SenTestingKit.framework in Frameworks */,
 				35171D2114D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
 				35171D2214D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
-				35463E2B14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */,
-				35463E2E14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +132,7 @@
 		35171CFA14D1BB4C000F9ED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */,
-				35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */,
+				35463E3914EC5FEE00DAF7B3 /* libGiltApi.a */,
 				35983A9214D339B500DBF488 /* CoreImage.framework */,
 				35171CFB14D1BB4C000F9ED9 /* UIKit.framework */,
 				35171CFD14D1BB4C000F9ED9 /* Foundation.framework */,
@@ -381,7 +373,6 @@
 		35171D2E14D1BB4C000F9ED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,7 +389,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../ApiLib/ApiLib/**";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,7 +399,6 @@
 		35171D2F14D1BB4C000F9ED9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -418,7 +408,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "../ApiLib/ApiLib/**";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../Headers";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;

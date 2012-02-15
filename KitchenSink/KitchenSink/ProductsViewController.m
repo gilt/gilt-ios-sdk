@@ -8,7 +8,7 @@
 
 #import "ProductsViewController.h"
 
-#import "GiltApi.h"
+#import <GiltApi/GiltApi.h>
 #import "ProductTableViewCell.h"
 #import "MultiSkuProductTableViewCell.h"
 #import "ProductViewController.h"

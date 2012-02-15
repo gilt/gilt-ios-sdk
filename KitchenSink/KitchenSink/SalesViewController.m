@@ -8,7 +8,7 @@
 
 #import "SalesViewController.h"
 
-#import "GiltApi.h"
+#import <GiltApi/GiltApi.h>
 #import "ProductsViewController.h"
 #import "SalesTableViewCell.h"
 
@@ -19,9 +19,6 @@
 - (void)awakeFromNib
 {
     self.clearsSelectionOnViewWillAppear = NO;
-    /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-     self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
-    }*/
     [super awakeFromNib];
 }
 
@@ -36,10 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    //self.detailViewController = (GDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    //self.detailViewController = (GDetailViewController *)[[self.splitViewController    
 }
 
 - (void)viewDidUnload
@@ -72,7 +65,8 @@
                                         return valid;
                                     }];
                                     sales = [salesList filteredArrayUsingPredicate:filter];
-                                    NSLog(@"Sales %@", sales);
+                                    NSLog(@"Fetched %d sales", [sales count]);
+                                    
                                     [self.tableView performSelectorOnMainThread:@selector(reloadData) 
                                                                      withObject:nil 
                                                                   waitUntilDone:YES];
@@ -115,12 +109,15 @@
     }
 }
 
+#pragma mark - Segue
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     SalesTableViewCell *cell = sender;
     ProductsViewController *products_controller = segue.destinationViewController;
     products_controller.sale = cell.sale;
 }
 
+#pragma mark - Table View Delegate/Datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -145,59 +142,12 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 0;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row < [sales count]) {
-        //GiltSale *selected_sale = [sales objectAtIndex:indexPath.row];
-        
-        //[self.navigationController pushViewController:productsTableViewController animated:YES];
-        //[self.navigationController performSegueWithIdentifier:@"PushProductsTable" sender:self];
-    }
 }
 
 @end
