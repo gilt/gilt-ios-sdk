@@ -5,13 +5,11 @@ This SDK provides wraps the Gilt Groupe public developer API. Our goal is to abs
 
 The API Token
 -------------
-* * *
 ### Obtaining An Token ###
 A free API token is required to use the API. Register for one at (https://dev.gilt.com/user/register)
 
 Installation
 ------------
-* * *
 ### Prerequisites ###
  - Xcode 4 (http://developer.apple.com/devcenter/ios/index.action)
  - Git (http://git-scm.com/)
@@ -64,7 +62,6 @@ Integrating an API token can be done in three ways:
 
 Demo App
 --------
-* * *
 The SDK source includes a comprehensive iOS demo application that emulates a complete shopping experience. This app is demonstrates how to obtain and display a display a list of sales grouped by store, display products in a specific sale, and display product details including "view on Gilt" referral links. Copying from this project is encouraged in the hope that it may take some tedious work off your plate.
 
 ### Running The Demo ###
@@ -75,7 +72,6 @@ The SDK source includes a comprehensive iOS demo application that emulates a com
 
 Gilt API Details & Developer Program
 ------------------------------------
-* * *
 Additional details about the Gilt API, Developer Program and other SDKs can be found at the [Gilt Groupe Developer Center](https://dev.gilt.com/).
 
 Be sure to check out Gilt Groupe's [other great public projects](https://github.com/gilt/) on GitHub.
