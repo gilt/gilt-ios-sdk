@@ -11,6 +11,7 @@
 #import "GiltApi.h"
 #import "ProductTableViewCell.h"
 #import "MultiSkuProductTableViewCell.h"
+#import "ProductViewController.h"
 
 @implementation ProductsViewController
 
@@ -193,6 +194,13 @@
     sale = aSale;
     self.navigationItem.title = sale.name;
     products = [NSMutableArray arrayWithCapacity:[sale.products count]];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    ProductViewController *product_controller = segue.destinationViewController;
+    product_controller.product = ((ProductTableViewCell *)sender).rightProduct;
 }
 
 @end

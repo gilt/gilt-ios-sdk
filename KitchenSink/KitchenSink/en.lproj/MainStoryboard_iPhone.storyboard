@@ -186,6 +186,7 @@
                                     <outlet property="rightMsrpPriceLabel" destination="n4t-n6-OmE" id="JE2-7D-jf9"/>
                                     <outlet property="rightProductNameLabel" destination="OD6-6t-Fic" id="YRf-a4-f8B"/>
                                     <outlet property="rightSalePriceLabel" destination="vIk-cg-GeK" id="0Ub-6n-bfj"/>
+                                    <segue destination="JGO-mh-dUY" kind="push" id="A4V-sR-VnS"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MultiSkuProdCell" rowHeight="190" id="9vV-As-iZi" customClass="MultiSkuProductTableViewCell">
@@ -274,6 +275,45 @@
             </objects>
             <point key="canvasLocation" x="878" y="64"/>
         </scene>
+        <scene sceneID="Se5-Y6-dae">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MiD-iM-xXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="JGO-mh-dUY" customClass="ProductViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHG-HF-2ct">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="k06-NV-CXQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Product Name" lineBreakMode="tailTruncation" minimumFontSize="10" id="41I-Cw-hH2">
+                                <rect key="frame" x="25" y="178" width="166" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Brand" lineBreakMode="tailTruncation" minimumFontSize="10" id="xMs-Du-nsg">
+                                <rect key="frame" x="25" y="207" width="166" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yI5-WF-mHc"/>
+                    <connections>
+                        <outlet property="brand" destination="xMs-Du-nsg" id="3Et-NT-Y5V"/>
+                        <outlet property="name" destination="41I-Cw-hH2" id="rCn-hv-weW"/>
+                        <outlet property="primaryImage" destination="k06-NV-CXQ" id="Zc2-dO-ueM"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1366" y="68"/>
+        </scene>
     </scenes>
     <classes>
         <class className="MultiSkuProductTableViewCell" superclassName="UITableViewCell">
@@ -303,6 +343,17 @@
                 <relationship kind="outlet" name="rightMsrpPriceLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rightProductNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rightSalePriceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ProductViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProductViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="brand" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="details" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="other" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="primaryImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="product" candidateClass="GiltProduct"/>
             </relationships>
         </class>
         <class className="ProductsViewController" superclassName="UITableViewController">

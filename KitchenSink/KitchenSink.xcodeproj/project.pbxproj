@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31D543BC14E5E6F800870EE2 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D543BB14E5E6F800870EE2 /* libGiltApi.a */; };
 		3509E13414D3093C00A1C003 /* SalesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3509E13314D3093C00A1C003 /* SalesTableViewCell.m */; };
 		3509E13814D3120D00A1C003 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3509E13714D3120D00A1C003 /* ProductTableViewCell.m */; };
 		35171CFC14D1BB4C000F9ED9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFB14D1BB4C000F9ED9 /* UIKit.framework */; };
@@ -24,6 +23,11 @@
 		35171D2214D1BB4C000F9ED9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35171CFD14D1BB4C000F9ED9 /* Foundation.framework */; };
 		35171D2A14D1BB4C000F9ED9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35171D2814D1BB4C000F9ED9 /* InfoPlist.strings */; };
 		35171D2D14D1BB4C000F9ED9 /* KitchenSinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */; };
+		35463E2514EC1B7A00DAF7B3 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35463E2414EC1B7A00DAF7B3 /* ProductViewController.m */; };
+		35463E2A14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */; };
+		35463E2B14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */; };
+		35463E2D14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */; };
+		35463E2E14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */; };
 		35983A9014D32EFF00DBF488 /* MultiSkuProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */; };
 		35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35983A9214D339B500DBF488 /* CoreImage.framework */; };
 		35983A9614D33E3000DBF488 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 35983A9514D33E3000DBF488 /* NSString+MD5.m */; };
@@ -43,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31D543BB14E5E6F800870EE2 /* libGiltApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGiltApi.a; path = "../ApiLib/build/Release-iphoneos/libGiltApi.a"; sourceTree = "<group>"; };
 		3509E13214D3093C00A1C003 /* SalesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesTableViewCell.h; sourceTree = "<group>"; };
 		3509E13314D3093C00A1C003 /* SalesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesTableViewCell.m; sourceTree = "<group>"; };
 		3509E13614D3120D00A1C003 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
@@ -69,6 +72,10 @@
 		35171D2914D1BB4C000F9ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35171D2B14D1BB4C000F9ED9 /* KitchenSinkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KitchenSinkTests.h; sourceTree = "<group>"; };
 		35171D2C14D1BB4C000F9ED9 /* KitchenSinkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KitchenSinkTests.m; sourceTree = "<group>"; };
+		35463E2314EC1B7A00DAF7B3 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		35463E2414EC1B7A00DAF7B3 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGiltApi.a; sourceTree = "<group>"; };
+		35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGiltApi-Simulator.a"; sourceTree = "<group>"; };
 		35983A8E14D32EFF00DBF488 /* MultiSkuProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSkuProductTableViewCell.h; sourceTree = "<group>"; };
 		35983A8F14D32EFF00DBF488 /* MultiSkuProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSkuProductTableViewCell.m; sourceTree = "<group>"; };
 		35983A9214D339B500DBF488 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -86,11 +93,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31D543BC14E5E6F800870EE2 /* libGiltApi.a in Frameworks */,
 				35171CFC14D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
 				35171CFE14D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
 				35171D0014D1BB4C000F9ED9 /* CoreGraphics.framework in Frameworks */,
 				35983A9314D339B500DBF488 /* CoreImage.framework in Frameworks */,
+				35463E2A14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */,
+				35463E2D14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +109,8 @@
 				35171D2014D1BB4C000F9ED9 /* SenTestingKit.framework in Frameworks */,
 				35171D2114D1BB4C000F9ED9 /* UIKit.framework in Frameworks */,
 				35171D2214D1BB4C000F9ED9 /* Foundation.framework in Frameworks */,
+				35463E2B14EC1C9B00DAF7B3 /* libGiltApi.a in Frameworks */,
+				35463E2E14EC1CC600DAF7B3 /* libGiltApi-Simulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +120,6 @@
 		35171CEC14D1BB4C000F9ED9 = {
 			isa = PBXGroup;
 			children = (
-				31D543BB14E5E6F800870EE2 /* libGiltApi.a */,
-				35983A9214D339B500DBF488 /* CoreImage.framework */,
 				35171D0114D1BB4C000F9ED9 /* KitchenSink */,
 				35171D2514D1BB4C000F9ED9 /* KitchenSinkTests */,
 				35171CFA14D1BB4C000F9ED9 /* Frameworks */,
@@ -131,6 +139,9 @@
 		35171CFA14D1BB4C000F9ED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35463E2914EC1C9B00DAF7B3 /* libGiltApi.a */,
+				35463E2C14EC1CC600DAF7B3 /* libGiltApi-Simulator.a */,
+				35983A9214D339B500DBF488 /* CoreImage.framework */,
 				35171CFB14D1BB4C000F9ED9 /* UIKit.framework */,
 				35171CFD14D1BB4C000F9ED9 /* Foundation.framework */,
 				35171CFF14D1BB4C000F9ED9 /* CoreGraphics.framework */,
@@ -149,6 +160,8 @@
 				35171D1414D1BB4C000F9ED9 /* SalesViewController.m */,
 				35171D1614D1BB4C000F9ED9 /* ProductsViewController.h */,
 				35171D1714D1BB4C000F9ED9 /* ProductsViewController.m */,
+				35463E2314EC1B7A00DAF7B3 /* ProductViewController.h */,
+				35463E2414EC1B7A00DAF7B3 /* ProductViewController.m */,
 				3509E13214D3093C00A1C003 /* SalesTableViewCell.h */,
 				3509E13314D3093C00A1C003 /* SalesTableViewCell.m */,
 				3509E13614D3120D00A1C003 /* ProductTableViewCell.h */,
@@ -315,6 +328,7 @@
 				35983A9614D33E3000DBF488 /* NSString+MD5.m in Sources */,
 				35983A9914D340EB00DBF488 /* ImageFetcher.m in Sources */,
 				35983A9C14D35BF800DBF488 /* UIImage+Scaling.m in Sources */,
+				35463E2514EC1B7A00DAF7B3 /* ProductViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +434,10 @@
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_CFLAGS = "-DDEBUG=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -434,6 +452,10 @@
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSink/KitchenSink-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -451,6 +473,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -468,6 +494,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KitchenSink/KitchenSink-Prefix.pch";
 				INFOPLIST_FILE = "KitchenSinkTests/KitchenSinkTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

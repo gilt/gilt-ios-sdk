@@ -122,6 +122,8 @@
     }
 }
 
+#pragma - mark Image Ready Handler
+
 - (void)imageReady:(NSNotification *)notification {
     NSString *image_url = [[notification userInfo] objectForKey:@"sourceUrl"];
     UIImage *image = [[notification userInfo] objectForKey:@"image"];
