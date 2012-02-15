@@ -37,20 +37,20 @@ Integrating an API token can be done in three ways:
  1. Import the SDK classes<br/>
     Add the following line to the top of your application delegate source file (MyAppDelegate.m)
 
-	\#import "GiltApi.h"
+        #import "GiltApi.h"
 
  2. Retrieve a list of sales<br/>
 
-    NSError *error = nil;
-    NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:YES timeout:30.0 error:&error];
-    if (!error) {
-      for (GiltSale *sale in sales) {
-        NSLog("Got sale [%@] with %d products.", sale.name, [sale.products count]);
-      }
-    }
-    else {
-      NSLog("An error has occurred %@", error);
-    }
+	    NSError *error = nil;
+	    NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:YES timeout:30.0 error:&error];
+	    if (!error) {
+	      for (GiltSale *sale in sales) {
+	        NSLog("Got sale [%@] with %d products.", sale.name, [sale.products count]);
+	      }
+	    }
+	    else {
+	      NSLog("An error has occurred %@", error);
+	    }
 	
  3. Check out the demo app for comprehensive examples!
  
