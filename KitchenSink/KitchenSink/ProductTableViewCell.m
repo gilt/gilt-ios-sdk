@@ -19,7 +19,6 @@ typedef enum {
 
 @interface ProductTableViewCell (private)
 - (void)fetchProduct:(NSURL *)url side:(ProductSide)side;
-- (void)imageReadyMainThread:(NSNotification *)notification;
 @end
 
 @implementation ProductTableViewCell
@@ -195,10 +194,6 @@ typedef enum {
 #pragma - mark Image Ready Handler
 
 - (void)imageReady:(NSNotification *)notification {
-    [self performSelectorOnMainThread:@selector(imageReadyMainThread:) withObject:notification waitUntilDone:NO];
-}
-
-- (void)imageReadyMainThread:(NSNotification *)notification {
     NSString *image_url = [[notification userInfo] objectForKey:@"sourceUrl"];
     UIImage *image = [[notification userInfo] objectForKey:@"image"];
     
@@ -222,8 +217,10 @@ typedef enum {
     }
 
     if (viewToUpdate) {
-        viewToUpdate.image = image;
-        [self setNeedsDisplay];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            viewToUpdate.image = image;
+            [self setNeedsDisplay];
+        });
     }
     else {
         NSLog(@"Recieved invalid download event [%@]", image_url);

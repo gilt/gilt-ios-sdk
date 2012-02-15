@@ -60,7 +60,6 @@
                                                          name:@"ImageReadyNotification"
                                                        object:[image_url absoluteString]];
             
-            NSLog(@"Requesting Image [%@]", image_url);
             [ImageFetcher getImageFromURL:image_url 
                           preprocessBlock:^UIImage *(NSData *data) {
                               NSLog(@"Preprocessing Fresh Image [%@]", image_url);
@@ -80,9 +79,11 @@
     if ([sale_images count]) {
         NSURL *expected_image_url = [sale_images objectAtIndex:0];
         if ([expected_image_url isEqual:image_url]) {
-            self.thumbView.image = image;
-            [self setNeedsDisplay];
-            NSLog(@"Updated image [%@]", image_url);
+            // Update UI on main thread
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.thumbView.image = image;
+                [self setNeedsDisplay];
+            });
         }
         else {
             NSLog(@"Receieved invalid download event  [%@]", image_url);
