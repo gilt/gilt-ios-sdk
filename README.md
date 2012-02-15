@@ -11,9 +11,9 @@ A free API token is required to use the API. Register for one at (https://dev.gi
 Installation
 ------------
 ### Prerequisites ###
- - Xcode 4 (http://developer.apple.com/devcenter/ios/index.action)
- - Git (http://git-scm.com/)
- - Mac OSX Snow Leopard newer
+ - [Xcode 4](http://developer.apple.com/devcenter/ios/index.action)
+ - [Git](http://git-scm.com/)
+ - Mac OSX Snow Leopard or newer
  - The SDK
    - Grab the source with `git clone git@github.com:gilt/gilt-ios-sdk.git`
    - Just the static library [here](https://github.com/gilt/gilt-ios-sdk/downloads)
@@ -38,21 +38,21 @@ Integrating an API token can be done in three ways:
     Add the following line to the top of your application delegate source file (MyAppDelegate.m)
 
 
-	\#import "GiltApi.h"
+    \#import "GiltApi.h"
 
  2. Retrieve a list of sales<br/>
 
 
-	NSError *error = nil;
-	NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:YES timeout:30.0 error:&error];
-	if (!error) {
-		for (GiltSale *sale in sales) {
-			NSLog("Got sale [%@] with %d products.", sale.name, [sale.products count]);
-		}
-	}
-	else {
-		NSLog("An error has occurred %@", error);
-	}
+    NSError *error = nil;
+    NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:YES timeout:30.0 error:&error];
+    if (!error) {
+      for (GiltSale *sale in sales) {
+        NSLog("Got sale [%@] with %d products.", sale.name, [sale.products count]);
+      }
+    }
+    else {
+      NSLog("An error has occurred %@", error);
+    }
 	
  3. Check out the demo app for comprehensive examples!
  
@@ -79,10 +79,11 @@ Be sure to check out Gilt Groupe's [other great public projects](https://github.
 Contributing
 ------------
 See a bug? Think you can do this better than us? Show us! Your contributions and feed back are always welcome.
+
  1. [Fork this repository](http://help.github.com/fork-a-repo/)
  2. Make changes to your repository. Be sure to add/edit the tests if you change the ApiLib.
  3. [Send us a pull request](http://help.github.com/send-pull-requests/) when you're satisfied with your changes
- 4. Follow us [Adam Kaplan](https://github.com/users/follow?target=adamkaplan) and [Louis Vera](https://github.com/users/follow?target=louoso)
+ 4. Follow [Adam Kaplan](https://github.com/users/follow?target=adamkaplan) and [Louis Vera](https://github.com/users/follow?target=louoso)
 
 Feedback
 --------
