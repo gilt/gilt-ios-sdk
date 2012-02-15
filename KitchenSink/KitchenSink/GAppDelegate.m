@@ -14,6 +14,8 @@
 
 void uncaughtExceptionHandler(NSException *exception);
 
+#pragma mark - Application Lifecycle
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
@@ -76,6 +78,15 @@ void uncaughtExceptionHandler(NSException *exception);
      See also applicationDidEnterBackground:.
      */
 }
+
+#pragma mark - Memory Management
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    // Nuke caches
+    [productCache removeAllObjects];
+}
+
+#pragma mark - Exception Handling
 
 void uncaughtExceptionHandler(NSException *exception) {
     NSLog(@"Exception: %@", exception);
