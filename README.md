@@ -37,7 +37,7 @@ Integrating an API token can be done in three ways:
  1. Import the SDK classes<br/>
     Add the following line to the top of your application delegate source file (MyAppDelegate.m)
 
-    \#import "GiltApi.h"
+	\#import "GiltApi.h"
 
  2. Retrieve a list of sales<br/>
 
