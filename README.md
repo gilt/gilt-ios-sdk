@@ -39,6 +39,7 @@ Integrating an API token can be done in three ways:
 
 
     \#import "GiltApi.h"
+ 
 
  2. Retrieve a list of sales<br/>
 
