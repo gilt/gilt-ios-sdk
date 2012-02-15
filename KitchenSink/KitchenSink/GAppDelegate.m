@@ -7,7 +7,6 @@
 //
 
 #import "GAppDelegate.h"
-#import "GiltApi.h"
 
 @implementation GAppDelegate
 
@@ -33,13 +32,6 @@ void uncaughtExceptionHandler(NSException *exception);
     
     UINavigationBar *defaultNavBar = [UINavigationBar appearance];
     [defaultNavBar setBackgroundImage:pixel forBarMetrics:UIBarMetricsDefault];
-    
-    // Override point for customization after application launch.
-    /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-    }*/
     
     return YES;
 }
