@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GAppDelegate : UIResponder <UIApplicationDelegate>
+@interface GAppDelegate : UIResponder <UIApplicationDelegate> {
+    @private
+    NSMutableDictionary *productCache;
+}
 
+@property (strong) NSMutableDictionary *productCache;
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic, readonly) NSOperationQueue *downloadQueue;
 

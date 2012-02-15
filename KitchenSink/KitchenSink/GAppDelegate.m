@@ -10,7 +10,7 @@
 
 @implementation GAppDelegate
 
-@synthesize window = _window, downloadQueue;
+@synthesize window = _window, downloadQueue, productCache;
 
 void uncaughtExceptionHandler(NSException *exception);
 
@@ -20,6 +20,8 @@ void uncaughtExceptionHandler(NSException *exception);
     
     downloadQueue = [NSOperationQueue new];
     downloadQueue.maxConcurrentOperationCount = 5;
+    
+    productCache = [[NSMutableDictionary alloc] initWithCapacity:1024];
     
     // Customize appearances
     UIGraphicsBeginImageContext(CGSizeMake(1, 1));

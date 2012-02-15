@@ -12,7 +12,6 @@
 
 @interface ProductsViewController : UITableViewController {
 @private
-    NSMutableArray *products;
 }
 
 @property (strong, nonatomic) GiltSale *sale;

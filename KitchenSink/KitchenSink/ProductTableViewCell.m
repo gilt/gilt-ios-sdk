@@ -8,15 +8,26 @@
 
 #import "ProductTableViewCell.h"
 #import <GiltApi/GiltApi.h>
+#import "GAppDelegate.h"
 #import "ImageFetcher.h"
 #import "UIImage+Scaling.h"
+
+typedef enum {
+    ProductSideLeft = 1,
+    ProductSideRight
+} ProductSide;
+
+@interface ProductTableViewCell (private)
+- (void)fetchProduct:(NSURL *)url side:(ProductSide)side;
+- (void)imageReadyMainThread:(NSNotification *)notification;
+@end
 
 @implementation ProductTableViewCell
 
 @synthesize leftImageView, leftBrandLabel, leftProductNameLabel, leftSalePriceLabel, 
-            leftMsrpPriceLabel, leftProduct;
+            leftMsrpPriceLabel, leftProduct, leftProductKey;
 @synthesize rightImageView, rightBrandLabel, rightProductNameLabel, rightSalePriceLabel, 
-            rightMsrpPriceLabel, rightProduct;
+            rightMsrpPriceLabel, rightProduct, rightProductKey;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -35,6 +46,8 @@
 }
 
 - (void)prepareForReuse {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
     leftBrandLabel.text = nil;
     rightBrandLabel.text = nil;
 
@@ -53,7 +66,36 @@
     leftMsrpPriceLabel.text = nil;
     rightMsrpPriceLabel.text = nil;
     
+    leftProductKey = nil;
+    rightProductKey = nil;
+    
     [super prepareForReuse];
+}
+
+- (void)setLeftProductKey:(id)key {
+    GAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    GiltProduct *product = [delegate.productCache objectForKey:key];
+    if (product) {
+        self.leftProduct = product;
+        NSLog(@"+++ Cache hit for product [%@]", key);
+    }
+    else {
+        [self fetchProduct:key side:ProductSideLeft];
+        NSLog(@"--- Cache miss for product [%@]", key);
+    }
+}
+
+- (void)setRightProductKey:(id)key {
+    GAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    GiltProduct *product = [delegate.productCache objectForKey:key];
+    if (product) {
+        self.rightProduct = product;
+        NSLog(@"+++ Cache hit for product [%@]", key);
+    }
+    else {
+        [self fetchProduct:key side:ProductSideRight];
+        NSLog(@"--- Cache miss for product [%@]", key);
+    }    
 }
 
 - (void)setLeftProduct:(GiltProduct *)product {
@@ -78,7 +120,6 @@
                                                          name:@"ImageReadyNotification"
                                                        object:[url absoluteString]];
             
-            NSLog(@"Requesting Image [%@]", url);
             [ImageFetcher getImageFromURL:url 
                           preprocessBlock:^UIImage *(NSData *data) {
                               NSLog(@"Preprocessing Fresh Image [%@]", url);
@@ -87,6 +128,7 @@
                           }];
         }
     }
+    [self setNeedsDisplay];
 }
 
 - (void)setRightProduct:(GiltProduct *)product {
@@ -111,7 +153,6 @@
                                                      name:@"ImageReadyNotification"
                                                    object:[url absoluteString]];
         
-        NSLog(@"Requesting Image [%@]", url);
         [ImageFetcher getImageFromURL:url 
                       preprocessBlock:^UIImage *(NSData *data) {
                           NSLog(@"Preprocessing Fresh Image [%@]", url);
@@ -120,11 +161,44 @@
                       }];
         }
     }
+    [self setNeedsDisplay];
+}
+
+- (void)fetchProduct:(NSURL *)url side:(ProductSide)side {
+    [GiltProductClient fetchProduct:url
+                         completion:
+     ^(GiltProduct *product, NSError *error) {
+         if (!error) {
+             GAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+             [delegate.productCache setObject:product forKey:url];
+             
+             SEL selector;
+             if (side == ProductSideLeft) {
+                 selector = @selector(setLeftProduct:);
+             }
+             else {
+                 selector = @selector(setRightProduct:);
+             }
+             [self performSelectorOnMainThread:selector withObject:product waitUntilDone:NO];
+         }
+         else {
+             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+                                                             message:[error localizedDescription]
+                                                            delegate:nil 
+                                                   cancelButtonTitle:@"Dismiss"
+                                                   otherButtonTitles:nil];
+             [alert show];
+         }
+     }];
 }
 
 #pragma - mark Image Ready Handler
 
 - (void)imageReady:(NSNotification *)notification {
+    [self performSelectorOnMainThread:@selector(imageReadyMainThread:) withObject:notification waitUntilDone:NO];
+}
+
+- (void)imageReadyMainThread:(NSNotification *)notification {
     NSString *image_url = [[notification userInfo] objectForKey:@"sourceUrl"];
     UIImage *image = [[notification userInfo] objectForKey:@"image"];
     
@@ -150,7 +224,6 @@
     if (viewToUpdate) {
         viewToUpdate.image = image;
         [self setNeedsDisplay];
-        NSLog(@"Updated image [%@]", image_url);
     }
     else {
         NSLog(@"Recieved invalid download event [%@]", image_url);

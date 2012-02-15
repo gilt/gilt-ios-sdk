@@ -280,9 +280,9 @@
 		359C1DF514D1C5AB00010224 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35384D3C14D1C6D7002C29E4 /* GiltModel.h */,
 				351A16D114D493ED007C0B00 /* GiltImageCollection.h */,
 				351A16D214D493ED007C0B00 /* GiltImageCollection.m */,
-				35384D3C14D1C6D7002C29E4 /* GiltModel.h */,
 				35384D4314D1C714002C29E4 /* GiltProduct.h */,
 				35384D4414D1C714002C29E4 /* GiltProduct.m */,
 				35384D3E14D1C6EE002C29E4 /* GiltSale.h */,

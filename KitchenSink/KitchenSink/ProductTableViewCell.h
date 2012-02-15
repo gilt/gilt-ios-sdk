@@ -18,6 +18,7 @@
 @property (strong, nonatomic, retain) IBOutlet UILabel *leftSalePriceLabel;
 @property (strong, nonatomic, retain) IBOutlet UILabel *leftMsrpPriceLabel;
 @property (strong, nonatomic, retain) GiltProduct *leftProduct;
+@property (strong, nonatomic, retain) id leftProductKey;
 
 @property (strong, nonatomic, retain) IBOutlet UIImageView *rightImageView;
 @property (strong, nonatomic, retain) IBOutlet UILabel *rightBrandLabel;
@@ -25,5 +26,6 @@
 @property (strong, nonatomic, retain) IBOutlet UILabel *rightSalePriceLabel;
 @property (strong, nonatomic, retain) IBOutlet UILabel *rightMsrpPriceLabel;
 @property (strong, nonatomic, retain) GiltProduct *rightProduct;
+@property (strong, nonatomic, retain) id rightProductKey;
 
 @end

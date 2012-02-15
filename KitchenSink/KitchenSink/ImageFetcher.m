@@ -26,7 +26,7 @@
 
     NSData *image_data = [NSData dataWithContentsOfURL:path];
     if (image_data) {
-        NSLog(@"< < < Cache hit for resource [%@]", [imageUrl absoluteURL]);
+        NSLog(@"+++ Cache hit for image [%@]", [imageUrl absoluteURL]);
         UIImage *image = [UIImage imageWithData:image_data];
         
         NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -38,7 +38,7 @@
                             waitUntilDone:NO];
     }
     else {
-        NSLog(@"> > > Cache miss for resource [%@]", [imageUrl absoluteURL]);
+        NSLog(@"--- Cache miss for image [%@]", [imageUrl absoluteURL]);
         
         // Pull remote image
         NSURLRequest *request = [NSURLRequest requestWithURL:imageUrl
@@ -76,7 +76,6 @@
 }
 
 + (void)sendImageCompleteNotification:(NSDictionary *)info {
-    NSLog(@"Sending resource download event [%@]", [info valueForKey:@"sourceUrl"]);
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ImageReadyNotification" 
                                                         object:[[info valueForKey:@"sourceUrl"] absoluteString]
                                                       userInfo:info];

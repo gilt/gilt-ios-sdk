@@ -50,31 +50,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    if (sale) {
-        for(NSURL * url in sale.products) {
-            [GiltProductClient fetchProduct:url
-                                 completion:^(GiltProduct *product, NSError *error) {
-                                     if (!error) {
-                                         if(product) {
-                                             [products addObject:product];
-                                         }
-                                         NSLog(@"Products %@", products);
-                                         [self.tableView performSelectorOnMainThread:@selector(reloadData) 
-                                                                          withObject:nil 
-                                                                       waitUntilDone:YES];
-                                     }
-                                     else {
-                                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
-                                                                                         message:[error localizedDescription]
-                                                                                        delegate:nil 
-                                                                               cancelButtonTitle:@"Dismiss"
-                                                                               otherButtonTitles:nil];
-                                         [alert show];
-                                     }
-                                 }];
-        }
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -110,8 +85,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger rows = 0;
-    if ([products count]) {
-        rows = ceil([products count] / 2.0);
+    if ([sale.products count]) {
+        rows = ceil([sale.products count] / 2.0);
     }
     return rows;
 }
@@ -119,18 +94,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *single_reuse_identifier = @"ProdCell";
 
-    UITableViewCell *return_cell = [self.tableView dequeueReusableCellWithIdentifier:single_reuse_identifier];
+    ProductTableViewCell *return_cell = (ProductTableViewCell *)[self.tableView dequeueReusableCellWithIdentifier:single_reuse_identifier];
     NSInteger row = indexPath.row * 2;
-    if (row < [products count]) {
-        GiltProduct *product = [products objectAtIndex:row];
+    if (row < [sale.products count]) {
+        NSURL *key = [sale.products objectAtIndex:row];
+        return_cell.leftProductKey = key;
         
-            ((ProductTableViewCell *)return_cell).leftProduct = product;
-            
-            // Left view as seperate product
-            if (row + 1 < [products count]) {
-                GiltProduct *right_product = [products objectAtIndex:row + 1];
-                ((ProductTableViewCell *)return_cell).rightProduct = right_product;
-            }
+        // Left view as seperate product
+        if (row + 1 < [sale.products count]) {
+            NSURL *right_key = [sale.products objectAtIndex:row + 1];
+            return_cell.rightProductKey = right_key;
+        }
     }
     
     return return_cell;
@@ -182,18 +156,11 @@
     return 0;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row < [products count]) {
-        
-    }
-}
-
 #pragma mark - Setters
 
 - (void)setSale:(GiltSale *)aSale {
     sale = aSale;
     self.navigationItem.title = sale.name;
-    products = [NSMutableArray arrayWithCapacity:[sale.products count]];
 }
 
 #pragma mark - Segue
