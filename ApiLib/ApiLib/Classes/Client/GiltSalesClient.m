@@ -92,7 +92,7 @@
     
     id sales_data = [[[GiltApi sharedInstance].jsonParserDelegate newParser] objectWithData:data];
     NSArray *sales_list = nil;
-    if (!error) {
+    if (!*error) {
         if ([sales_data isKindOfClass:[NSDictionary class]]) {
             sales_list = [self salesFromJson:sales_data];
         }
