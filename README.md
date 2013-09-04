@@ -11,18 +11,19 @@ A free API token is required to use the API. Register for one at (https://dev.gi
 Installation
 ------------
 ### Prerequisites ###
- - [Xcode 4](http://developer.apple.com/devcenter/ios/index.action)
+ - [Xcode 4+](http://developer.apple.com/devcenter/ios/index.action)
  - [Git](http://git-scm.com/)
  - Mac OSX Snow Leopard or newer
  - The SDK
-   - Grab the source with `git clone git@github.com:gilt/gilt-ios-sdk.git`
-   - Just the static library [here](https://github.com/gilt/gilt-ios-sdk/downloads)
+   - Grab the static library [here](https://github.com/gilt/gilt-ios-sdk/downloads)
+   - Or the source with `git clone git@github.com:gilt/gilt-ios-sdk.git`
+      - *Bundling the source code is a bit more advanced, but makes contributing back to the project easier*
 
-### Setting Up Your Project
+### Setting Up Your Project ###
 Open Xcode and create a new project using one of the iOS application project templates.
 
 In other to use the SDK, you will need to add it to your project. This can be easily accomplished in a few different ways:
-  - Drag the `gilt-ios-sdk/ApiLib/ApiLib` folder into your project (this will compile the entire library)
+  - Drag the top level `gilt-ios-sdk/ApiLib` folder into your project (this will compile the entire library)
   - Create a new workspace. Add your project and the XCode project under gilt-ios-sdk/ApiLib
   - Drag the two precompiled static libraries into the `frameworks` folder of your project and add them to the `Linked Libraries` setting of your build target
 
@@ -42,14 +43,14 @@ Integrating an API token can be done in three ways:
  2. Retrieve a list of sales<br/>
 
 	    NSError *error = nil;
-	    NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:YES timeout:30.0 error:&error];
+	    NSArray *sales = [GiltSalesClient fetchSynchronousForStore:GiltEveryStore upcomingSales:NO timeout:30.0 error:&error];
 	    if (!error) {
 	      for (GiltSale *sale in sales) {
-	        NSLog("Got sale [%@] with %d products.", sale.name, [sale.products count]);
+	        NSLog(@"Got sale [%@] with %d products.", sale.name, [sale.products count]);
 	      }
 	    }
 	    else {
-	      NSLog("An error has occurred %@", error);
+	      NSLog(@"An error has occurred %@", error);
 	    }
 	
  3. Check out the demo app for comprehensive examples!
@@ -72,7 +73,7 @@ Gilt API Details & Developer Program
 ------------------------------------
 Additional details about the Gilt API, Developer Program and other SDKs can be found at the [Gilt Groupe Developer Center](https://dev.gilt.com/).
 
-Be sure to check out Gilt Groupe's [other great public projects](https://github.com/gilt/) on GitHub.
+Be sure to check out Gilt Groupe's [other great public projects](https://github.com/gilt/) on GitHub, and our [Tech Blog](http://tech.gilt.com/).
 
 Contributing
 ------------
